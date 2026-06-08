@@ -61,9 +61,12 @@ const LoginPage = () => {
         <div className="relative z-10">
             <div className="flex flex-row justify-center mb-8">
             <h1 className="text-4xl font-extrabold tracking-tight">
-                <Link to={"/"} className="flex items-center gap-1 hover:opacity-80 transition-opacity">
-                <span className="bg-gradient-to-r from-brand-primary to-brand-accent bg-clip-text text-transparent">Toko</span>
-                <span className="text-slate-900 dark:text-white transition-colors duration-300">Kita</span>
+                <Link to={"/"} className="flex items-center justify-center gap-2 hover:opacity-80 transition-opacity">
+                <img src="/logo.png" alt="TokoKita Logo" className="w-10 h-10 object-contain drop-shadow-md" />
+                <div className="flex items-center gap-1">
+                  <span className="bg-gradient-to-r from-brand-primary to-brand-accent bg-clip-text text-transparent">Toko</span>
+                  <span className="text-slate-900 dark:text-white transition-colors duration-300">Kita</span>
+                </div>
                 </Link>
             </h1>
             </div>

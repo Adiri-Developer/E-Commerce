@@ -36,9 +36,12 @@ const Header = ({ handleShowModalCart }) => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <h1 className="text-3xl font-extrabold tracking-tight">
-            <Link to={"/"} className="flex items-center gap-1 hover:opacity-80 transition-opacity">
-              <span className="bg-gradient-to-r from-brand-primary to-brand-accent bg-clip-text text-transparent">Toko</span>
-              <span className="text-slate-900 dark:text-white transition-colors duration-300">Kita</span>
+            <Link to={"/"} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <img src="/logo.png" alt="TokoKita Logo" className="w-8 h-8 sm:w-10 sm:h-10 object-contain drop-shadow-md" />
+              <div className="flex items-center gap-1 hidden sm:flex">
+                <span className="bg-gradient-to-r from-brand-primary to-brand-accent bg-clip-text text-transparent">Toko</span>
+                <span className="text-slate-900 dark:text-white transition-colors duration-300">Kita</span>
+              </div>
             </Link>
           </h1>
           <div className="flex flex-row gap-5">
