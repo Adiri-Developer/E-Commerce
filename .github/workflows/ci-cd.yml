@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: react-build-output
-          path: build/ # Sesuaikan jika folder build kamu namanya 'dist' (misal pengguna Vite)
+          path: dist/ # Sesuaikan jika folder build kamu namanya 'dist' (misal pengguna Vite)
           retention-days: 1
 
   # JOB 2: Dijalankan di server GitHub (Pembungkusan Docker)
@@ -54,7 +54,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: react-build-output
-          path: build/ # Meletakkan kembali folder build ke root direktori sebelum Docker berjalan
+          path: dist/ # Meletakkan kembali folder build ke root direktori sebelum Docker berjalan
 
       # Pastikan file lama tidak tersisa di Docker build context
       - name: Set up Docker Buildx

@@ -12,7 +12,7 @@ RUN npm run build
 # Stage 2: Serve the application with Nginx
 FROM nginx:alpine
 
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 # KOREKSI: Ubah menjadi 80, karena Nginx secara default berjalan di port 80
 EXPOSE 80
